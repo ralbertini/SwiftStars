@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB2BEA1C23174C4B00696565 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BEA1B23174C4B00696565 /* Network.swift */; };
 		DBFA1E292316AF77009E2489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E282316AF77009E2489 /* AppDelegate.swift */; };
 		DBFA1E2B2316AF77009E2489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E2A2316AF77009E2489 /* ViewController.swift */; };
 		DBFA1E2E2316AF77009E2489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFA1E2C2316AF77009E2489 /* Main.storyboard */; };
 		DBFA1E302316AF79009E2489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFA1E2F2316AF79009E2489 /* Assets.xcassets */; };
 		DBFA1E332316AF79009E2489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFA1E312316AF79009E2489 /* LaunchScreen.storyboard */; };
 		DBFA1E3E2316AF79009E2489 /* Swift_StarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E3D2316AF79009E2489 /* Swift_StarsTests.swift */; };
+		DBFA1E4B2316B306009E2489 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBFA1E4A2316B306009E2489 /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB2BEA1B23174C4B00696565 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DBFA1E252316AF77009E2489 /* Swift Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Stars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFA1E282316AF77009E2489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBFA1E2A2316AF77009E2489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		DBFA1E392316AF79009E2489 /* Swift StarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift StarsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFA1E3D2316AF79009E2489 /* Swift_StarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_StarsTests.swift; sourceTree = "<group>"; };
 		DBFA1E3F2316AF79009E2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBFA1E4A2316B306009E2489 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFA1E4B2316B306009E2489 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB2BEA1D23174C5100696565 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DB2BEA1B23174C4B00696565 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		DBFA1E1C2316AF77009E2489 = {
 			isa = PBXGroup;
 			children = (
 				DBFA1E272316AF77009E2489 /* Swift Stars */,
 				DBFA1E3C2316AF79009E2489 /* Swift StarsTests */,
 				DBFA1E262316AF77009E2489 /* Products */,
+				DBFA1E492316B305009E2489 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +91,7 @@
 		DBFA1E272316AF77009E2489 /* Swift Stars */ = {
 			isa = PBXGroup;
 			children = (
+				DB2BEA1D23174C5100696565 /* Network */,
 				DBFA1E282316AF77009E2489 /* AppDelegate.swift */,
 				DBFA1E2A2316AF77009E2489 /* ViewController.swift */,
 				DBFA1E2C2316AF77009E2489 /* Main.storyboard */,
@@ -96,6 +111,14 @@
 			path = "Swift StarsTests";
 			sourceTree = "<group>";
 		};
+		DBFA1E492316B305009E2489 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA1E4A2316B306009E2489 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +129,7 @@
 				DBFA1E212316AF77009E2489 /* Sources */,
 				DBFA1E222316AF77009E2489 /* Frameworks */,
 				DBFA1E232316AF77009E2489 /* Resources */,
+				DBFA1E482316B21F009E2489 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -192,6 +216,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DBFA1E482316B21F009E2489 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBFA1E212316AF77009E2489 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -199,6 +246,7 @@
 			files = (
 				DBFA1E2B2316AF77009E2489 /* ViewController.swift in Sources */,
 				DBFA1E292316AF77009E2489 /* AppDelegate.swift in Sources */,
+				DB2BEA1C23174C4B00696565 /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +410,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GLLGY9ZGF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Swift Stars/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -371,6 +423,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7s";
 			};
 			name = Debug;
 		};
@@ -380,6 +433,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GLLGY9ZGF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Swift Stars/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,6 +446,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7s";
 			};
 			name = Release;
 		};
