@@ -10,6 +10,9 @@
 		DB2BEA1C23174C4B00696565 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BEA1B23174C4B00696565 /* Network.swift */; };
 		DB2BEA1F23175FB100696565 /* NetworkSwiftRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BEA1E23175FB100696565 /* NetworkSwiftRepositories.swift */; };
 		DB2BEA222317633D00696565 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BEA212317633D00696565 /* Repository.swift */; };
+		DB5652FC231AB0170083AFF7 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5652FB231AB0170083AFF7 /* RepositoriesViewModel.swift */; };
+		DB5652FF231AF7A10083AFF7 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5652FE231AF7A10083AFF7 /* RepositoryTableViewCell.swift */; };
+		DBB2A33D231B06FC00A6A1F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2A33C231B06FC00A6A1F4 /* Extensions.swift */; };
 		DBFA1E292316AF77009E2489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E282316AF77009E2489 /* AppDelegate.swift */; };
 		DBFA1E2B2316AF77009E2489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E2A2316AF77009E2489 /* ViewController.swift */; };
 		DBFA1E2E2316AF77009E2489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFA1E2C2316AF77009E2489 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 		DB2BEA1B23174C4B00696565 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		DB2BEA1E23175FB100696565 /* NetworkSwiftRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSwiftRepositories.swift; sourceTree = "<group>"; };
 		DB2BEA212317633D00696565 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DB5652FB231AB0170083AFF7 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		DB5652FE231AF7A10083AFF7 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		DBB2A33C231B06FC00A6A1F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DBFA1E252316AF77009E2489 /* Swift Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Stars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFA1E282316AF77009E2489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBFA1E2A2316AF77009E2489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DB5652FD231AB01F0083AFF7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DB5652FB231AB0170083AFF7 /* RepositoriesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DBB2A33B231B00D200A6A1F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB5652FE231AF7A10083AFF7 /* RepositoryTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBB2A33E231B13D600A6A1F4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA1E2A2316AF77009E2489 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		DBFA1E1C2316AF77009E2489 = {
 			isa = PBXGroup;
 			children = (
@@ -104,14 +134,17 @@
 		DBFA1E272316AF77009E2489 /* Swift Stars */ = {
 			isa = PBXGroup;
 			children = (
+				DBB2A33E231B13D600A6A1F4 /* Controllers */,
+				DBB2A33B231B00D200A6A1F4 /* Views */,
+				DB5652FD231AB01F0083AFF7 /* ViewModels */,
 				DB2BEA20231762E300696565 /* Models */,
 				DB2BEA1D23174C5100696565 /* Network */,
 				DBFA1E282316AF77009E2489 /* AppDelegate.swift */,
-				DBFA1E2A2316AF77009E2489 /* ViewController.swift */,
 				DBFA1E2C2316AF77009E2489 /* Main.storyboard */,
 				DBFA1E2F2316AF79009E2489 /* Assets.xcassets */,
 				DBFA1E312316AF79009E2489 /* LaunchScreen.storyboard */,
 				DBFA1E342316AF79009E2489 /* Info.plist */,
+				DBB2A33C231B06FC00A6A1F4 /* Extensions.swift */,
 			);
 			path = "Swift Stars";
 			sourceTree = "<group>";
@@ -260,8 +293,11 @@
 			files = (
 				DB2BEA1F23175FB100696565 /* NetworkSwiftRepositories.swift in Sources */,
 				DBFA1E2B2316AF77009E2489 /* ViewController.swift in Sources */,
+				DB5652FF231AF7A10083AFF7 /* RepositoryTableViewCell.swift in Sources */,
+				DBB2A33D231B06FC00A6A1F4 /* Extensions.swift in Sources */,
 				DB2BEA222317633D00696565 /* Repository.swift in Sources */,
 				DBFA1E292316AF77009E2489 /* AppDelegate.swift in Sources */,
+				DB5652FC231AB0170083AFF7 /* RepositoriesViewModel.swift in Sources */,
 				DB2BEA1C23174C4B00696565 /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
