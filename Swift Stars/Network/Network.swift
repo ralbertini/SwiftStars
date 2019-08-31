@@ -22,10 +22,9 @@ class Network: NSObject {
 
     static var session: URLSession = {
         
-        let session = URLSession(configuration: URLSessionConfiguration())
+        let session = URLSession(configuration: URLSessionConfiguration.default)
         return session
     }()
-    
     
     static func doRequest(url:String, httpMethod: httpMethod, params:Dictionary<String,Any>?, completionHandler:  @escaping (Data?, URLResponse?, Error?) -> Void) {
         
@@ -37,6 +36,5 @@ class Network: NSObject {
         }
         
         task.resume()
-        
     }
 }

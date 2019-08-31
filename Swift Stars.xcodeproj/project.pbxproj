@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DB2BEA1C23174C4B00696565 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BEA1B23174C4B00696565 /* Network.swift */; };
+		DB2BEA1F23175FB100696565 /* NetworkSwiftRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BEA1E23175FB100696565 /* NetworkSwiftRepositories.swift */; };
+		DB2BEA222317633D00696565 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BEA212317633D00696565 /* Repository.swift */; };
 		DBFA1E292316AF77009E2489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E282316AF77009E2489 /* AppDelegate.swift */; };
 		DBFA1E2B2316AF77009E2489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E2A2316AF77009E2489 /* ViewController.swift */; };
 		DBFA1E2E2316AF77009E2489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFA1E2C2316AF77009E2489 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		DB2BEA1B23174C4B00696565 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		DB2BEA1E23175FB100696565 /* NetworkSwiftRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSwiftRepositories.swift; sourceTree = "<group>"; };
+		DB2BEA212317633D00696565 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		DBFA1E252316AF77009E2489 /* Swift Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Stars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFA1E282316AF77009E2489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBFA1E2A2316AF77009E2489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,8 +69,17 @@
 			isa = PBXGroup;
 			children = (
 				DB2BEA1B23174C4B00696565 /* Network.swift */,
+				DB2BEA1E23175FB100696565 /* NetworkSwiftRepositories.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		DB2BEA20231762E300696565 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB2BEA212317633D00696565 /* Repository.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		DBFA1E1C2316AF77009E2489 = {
@@ -91,6 +104,7 @@
 		DBFA1E272316AF77009E2489 /* Swift Stars */ = {
 			isa = PBXGroup;
 			children = (
+				DB2BEA20231762E300696565 /* Models */,
 				DB2BEA1D23174C5100696565 /* Network */,
 				DBFA1E282316AF77009E2489 /* AppDelegate.swift */,
 				DBFA1E2A2316AF77009E2489 /* ViewController.swift */,
@@ -244,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB2BEA1F23175FB100696565 /* NetworkSwiftRepositories.swift in Sources */,
 				DBFA1E2B2316AF77009E2489 /* ViewController.swift in Sources */,
+				DB2BEA222317633D00696565 /* Repository.swift in Sources */,
 				DBFA1E292316AF77009E2489 /* AppDelegate.swift in Sources */,
 				DB2BEA1C23174C4B00696565 /* Network.swift in Sources */,
 			);

@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.snp.makeConstraints { (make) in
-            make.bottom.equalToSuperview()
+        NetworkSwiftRepositories.getRepositories(idCidade: 0) { (error, repos) in
+            print(repos)
+            
         }
     }
 
