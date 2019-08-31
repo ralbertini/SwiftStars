@@ -15,7 +15,6 @@
 		DBB2A33D231B06FC00A6A1F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2A33C231B06FC00A6A1F4 /* Extensions.swift */; };
 		DBFA1E292316AF77009E2489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E282316AF77009E2489 /* AppDelegate.swift */; };
 		DBFA1E2B2316AF77009E2489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E2A2316AF77009E2489 /* ViewController.swift */; };
-		DBFA1E2E2316AF77009E2489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFA1E2C2316AF77009E2489 /* Main.storyboard */; };
 		DBFA1E302316AF79009E2489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFA1E2F2316AF79009E2489 /* Assets.xcassets */; };
 		DBFA1E332316AF79009E2489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFA1E312316AF79009E2489 /* LaunchScreen.storyboard */; };
 		DBFA1E3E2316AF79009E2489 /* Swift_StarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E3D2316AF79009E2489 /* Swift_StarsTests.swift */; };
@@ -42,7 +41,6 @@
 		DBFA1E252316AF77009E2489 /* Swift Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Stars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFA1E282316AF77009E2489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBFA1E2A2316AF77009E2489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DBFA1E2D2316AF77009E2489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBFA1E2F2316AF79009E2489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBFA1E322316AF79009E2489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBFA1E342316AF79009E2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				DB2BEA20231762E300696565 /* Models */,
 				DB2BEA1D23174C5100696565 /* Network */,
 				DBFA1E282316AF77009E2489 /* AppDelegate.swift */,
-				DBFA1E2C2316AF77009E2489 /* Main.storyboard */,
 				DBFA1E2F2316AF79009E2489 /* Assets.xcassets */,
 				DBFA1E312316AF79009E2489 /* LaunchScreen.storyboard */,
 				DBFA1E342316AF79009E2489 /* Info.plist */,
@@ -250,7 +247,6 @@
 			files = (
 				DBFA1E332316AF79009E2489 /* LaunchScreen.storyboard in Resources */,
 				DBFA1E302316AF79009E2489 /* Assets.xcassets in Resources */,
-				DBFA1E2E2316AF77009E2489 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DBFA1E2C2316AF77009E2489 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBFA1E2D2316AF77009E2489 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DBFA1E312316AF79009E2489 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -471,11 +459,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.ronaldoalbertini.Swift-Stars";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ronaldoalbertini.SwiftStars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7s";
+				VALID_ARCHS = "arm64 arm64e armv7s armv7";
 			};
 			name = Debug;
 		};
@@ -494,11 +482,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.ronaldoalbertini.Swift-Stars";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.ronaldoalbertini.SwiftStars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7s";
+				VALID_ARCHS = "arm64 arm64e armv7s armv7";
 			};
 			name = Release;
 		};

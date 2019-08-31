@@ -10,15 +10,17 @@ import UIKit
 
 class NetworkSwiftRepositories: NSObject {
     
-    static func getRepositories(idCidade: UInt, completion:@escaping (Error?, [Repository]?) -> Void) {
+    private static let baseURL: String = "https://api.github.com/"
     
-        Network.doRequest(url: "https://api.github.com/search/repositories?q=language:swift&sort=stars", httpMethod: httpMethod.get, params: nil) { (data, urlResponse, error) in
+    static func getRepositories(page: UInt = 1, itemsPerPage: UInt, completion:@escaping (Error?, [Repository]?) -> Void) {
+    
+        Network.doRequest(url: "\(baseURL)search/repositories?q=language:swift&sort=stars&page=\(page)&per_page=\(itemsPerPage)", httpMethod: httpMethod.get, params: nil) { (data, urlResponse, error) in
             
             do {
                 guard let data = data else { return }
                 
-                let eventos = try JSONDecoder().decode(RootRepositories.self, from: data)
-                completion(nil, eventos.items)
+                let repos = try JSONDecoder().decode(RootRepositories.self, from: data)
+                completion(nil, repos.items)
                 
             } catch {
                 
