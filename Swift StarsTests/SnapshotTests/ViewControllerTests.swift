@@ -18,7 +18,7 @@ class ViewControllerTests: FBSnapshotTestCase {
         self.fileNameOptions = [.screenSize,.screenScale]
     }
     
-    func testThatLoginPageAppearsCorrectly() {
+    func testTableViewWithJSONRecords() {
         let vc = ViewController()
 
         if let repos = self.readRepositoriesFromJson() {

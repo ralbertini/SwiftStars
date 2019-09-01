@@ -55,7 +55,6 @@ class RepositoryTableViewCell: UITableViewCell {
     
     lazy var lbAuthorNameValue: UILabel = {
         var label: UILabel = UILabel()
-        
         return label
     }()
     
@@ -108,7 +107,7 @@ class RepositoryTableViewCell: UITableViewCell {
         }
         
         self.lbRepoStarsValue.snp.makeConstraints { (make) in
-            make.top.equalTo(self.lbRepoNameValue.snp.bottom).offset(10)
+            make.centerY.equalTo(self.lbRepoStars.snp.centerY)
             make.leading.equalTo(self.lbRepoStars.snp.trailing).offset(5)
         }
         

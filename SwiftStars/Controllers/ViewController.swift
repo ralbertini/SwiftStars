@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         tbView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: "repo")
         tbView.addSubview(self.refreshControl)
         tbView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        tbView.allowsSelection = false
         return tbView
     }()
     

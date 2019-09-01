@@ -20,10 +20,15 @@ or alternatively using `brew cask install fastlane`
 ```
 fastlane ios setup
 ```
-Description of what the lane does
-### ios tests
+
+### ios run_all_tests
 ```
-fastlane ios tests
+fastlane ios run_all_tests
+```
+
+### ios run_slather
+```
+fastlane ios run_slather
 ```
 
 
