@@ -12,6 +12,10 @@
 		DB2BEA222317633D00696565 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2BEA212317633D00696565 /* Repository.swift */; };
 		DB5652FC231AB0170083AFF7 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5652FB231AB0170083AFF7 /* RepositoriesViewModel.swift */; };
 		DB5652FF231AF7A10083AFF7 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5652FE231AF7A10083AFF7 /* RepositoryTableViewCell.swift */; };
+		DBAA670F231BC7E900A373E8 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = DBAA670E231BC7E900A373E8 /* Repository.json */; };
+		DBAA6710231BC8AC00A373E8 /* RepositorySpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA670B231BC54000A373E8 /* RepositorySpecs.swift */; };
+		DBAA6712231BC92000A373E8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAA6711231BC92000A373E8 /* Nimble.framework */; };
+		DBAA6714231BC93500A373E8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAA6713231BC93500A373E8 /* Quick.framework */; };
 		DBB2A33D231B06FC00A6A1F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2A33C231B06FC00A6A1F4 /* Extensions.swift */; };
 		DBFA1E292316AF77009E2489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E282316AF77009E2489 /* AppDelegate.swift */; };
 		DBFA1E2B2316AF77009E2489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E2A2316AF77009E2489 /* ViewController.swift */; };
@@ -37,6 +41,10 @@
 		DB2BEA212317633D00696565 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		DB5652FB231AB0170083AFF7 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
 		DB5652FE231AF7A10083AFF7 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		DBAA670B231BC54000A373E8 /* RepositorySpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySpecs.swift; sourceTree = "<group>"; };
+		DBAA670E231BC7E900A373E8 /* Repository.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Repository.json; sourceTree = "<group>"; };
+		DBAA6711231BC92000A373E8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		DBAA6713231BC93500A373E8 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		DBB2A33C231B06FC00A6A1F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DBFA1E252316AF77009E2489 /* SwiftStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFA1E282316AF77009E2489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAA6714231BC93500A373E8 /* Quick.framework in Frameworks */,
+				DBAA6712231BC92000A373E8 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +102,15 @@
 				DB5652FB231AB0170083AFF7 /* RepositoriesViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DBAA670D231BC74500A373E8 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA670B231BC54000A373E8 /* RepositorySpecs.swift */,
+				DBAA670E231BC7E900A373E8 /* Repository.json */,
+			);
+			path = ModelTests;
 			sourceTree = "<group>";
 		};
 		DBB2A33B231B00D200A6A1F4 /* Views */ = {
@@ -149,6 +168,7 @@
 		DBFA1E3C2316AF79009E2489 /* Swift StarsTests */ = {
 			isa = PBXGroup;
 			children = (
+				DBAA670D231BC74500A373E8 /* ModelTests */,
 				DBFA1E3D2316AF79009E2489 /* Swift_StarsTests.swift */,
 				DBFA1E3F2316AF79009E2489 /* Info.plist */,
 			);
@@ -158,6 +178,8 @@
 		DBFA1E492316B305009E2489 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBAA6713231BC93500A373E8 /* Quick.framework */,
+				DBAA6711231BC92000A373E8 /* Nimble.framework */,
 				DBFA1E4A2316B306009E2489 /* SnapKit.framework */,
 			);
 			name = Frameworks;
@@ -246,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBFA1E332316AF79009E2489 /* LaunchScreen.storyboard in Resources */,
+				DBAA670F231BC7E900A373E8 /* Repository.json in Resources */,
 				DBFA1E302316AF79009E2489 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,12 +292,16 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -302,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAA6710231BC8AC00A373E8 /* RepositorySpecs.swift in Sources */,
 				DBFA1E3E2316AF79009E2489 /* Swift_StarsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,7 +482,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "Swift Stars/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftStars/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,7 +505,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "Swift Stars/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftStars/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,6 +525,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GLLGY9ZGF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Swift StarsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,6 +550,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GLLGY9ZGF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Swift StarsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
