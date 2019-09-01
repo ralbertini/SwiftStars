@@ -1,4 +1,7 @@
 # SwiftStars
+Aplicativo iOS que lista os repositórios com mais estrelas em ordem decrescente
+
+## Instalação
 
 Ferramentas necessárias para rodar a aplicação:
 
@@ -16,6 +19,11 @@ brew install carthage
 curl https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer | bash -s stable
 source /Users/`whoami`/.rvm/scripts/rvm && rvm get master && rvm install 2.5.1 && rvm use 2.5.1
 ```
+
+- [Bundler](https://bundler.io/)
+```
+gem install bundler
+```
 - [fastlane](https://github.com/fastlane/fastlane)
 ```
 # Using RubyGems
@@ -24,13 +32,14 @@ sudo gem install fastlane -NV
 # Alternatively using Homebrew
 brew cask install fastlane
 ```
-Para instalar as dependências:
+Para instalar/atualizar as dependências:
 
 ```
 bundle install
 bundle exec fastlane setup
 ```
 
+## Testes
 Para rodar todos os testes (Unitários e Snapshot)
 ```
 bundle exec fastlane ios run_all_tests
