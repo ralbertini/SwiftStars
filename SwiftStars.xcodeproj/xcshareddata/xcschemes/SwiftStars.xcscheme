@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DBFA1E242316AF77009E2489"
-               BuildableName = "Swift Stars.app"
-               BlueprintName = "Swift Stars"
-               ReferencedContainer = "container:Swift Stars.xcodeproj">
+               BuildableName = "SwiftStars.app"
+               BlueprintName = "SwiftStars"
+               ReferencedContainer = "container:SwiftStars.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DBFA1E382316AF79009E2489"
-               BuildableName = "Swift StarsTests.xctest"
-               BlueprintName = "Swift StarsTests"
-               ReferencedContainer = "container:Swift Stars.xcodeproj">
+               BuildableName = "SwiftStarsTests.xctest"
+               BlueprintName = "SwiftStarsTests"
+               ReferencedContainer = "container:SwiftStars.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBFA1E242316AF77009E2489"
-            BuildableName = "Swift Stars.app"
-            BlueprintName = "Swift Stars"
-            ReferencedContainer = "container:Swift Stars.xcodeproj">
+            BuildableName = "SwiftStars.app"
+            BlueprintName = "SwiftStars"
+            ReferencedContainer = "container:SwiftStars.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBFA1E242316AF77009E2489"
-            BuildableName = "Swift Stars.app"
-            BlueprintName = "Swift Stars"
-            ReferencedContainer = "container:Swift Stars.xcodeproj">
+            BuildableName = "SwiftStars.app"
+            BlueprintName = "SwiftStars"
+            ReferencedContainer = "container:SwiftStars.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -86,9 +86,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DBFA1E242316AF77009E2489"
-            BuildableName = "Swift Stars.app"
-            BlueprintName = "Swift Stars"
-            ReferencedContainer = "container:Swift Stars.xcodeproj">
+            BuildableName = "SwiftStars.app"
+            BlueprintName = "SwiftStars"
+            ReferencedContainer = "container:SwiftStars.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -38,13 +38,13 @@
 		DB5652FB231AB0170083AFF7 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
 		DB5652FE231AF7A10083AFF7 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		DBB2A33C231B06FC00A6A1F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		DBFA1E252316AF77009E2489 /* Swift Stars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Stars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFA1E252316AF77009E2489 /* SwiftStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFA1E282316AF77009E2489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBFA1E2A2316AF77009E2489 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DBFA1E2F2316AF79009E2489 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBFA1E322316AF79009E2489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBFA1E342316AF79009E2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBFA1E392316AF79009E2489 /* Swift StarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift StarsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFA1E392316AF79009E2489 /* SwiftStarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftStarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFA1E3D2316AF79009E2489 /* Swift_StarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_StarsTests.swift; sourceTree = "<group>"; };
 		DBFA1E3F2316AF79009E2489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBFA1E4A2316B306009E2489 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		DBFA1E1C2316AF77009E2489 = {
 			isa = PBXGroup;
 			children = (
-				DBFA1E272316AF77009E2489 /* Swift Stars */,
+				DBFA1E272316AF77009E2489 /* SwiftStars */,
 				DBFA1E3C2316AF79009E2489 /* Swift StarsTests */,
 				DBFA1E262316AF77009E2489 /* Products */,
 				DBFA1E492316B305009E2489 /* Frameworks */,
@@ -123,13 +123,13 @@
 		DBFA1E262316AF77009E2489 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBFA1E252316AF77009E2489 /* Swift Stars.app */,
-				DBFA1E392316AF79009E2489 /* Swift StarsTests.xctest */,
+				DBFA1E252316AF77009E2489 /* SwiftStars.app */,
+				DBFA1E392316AF79009E2489 /* SwiftStarsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DBFA1E272316AF77009E2489 /* Swift Stars */ = {
+		DBFA1E272316AF77009E2489 /* SwiftStars */ = {
 			isa = PBXGroup;
 			children = (
 				DBB2A33E231B13D600A6A1F4 /* Controllers */,
@@ -143,7 +143,7 @@
 				DBFA1E342316AF79009E2489 /* Info.plist */,
 				DBB2A33C231B06FC00A6A1F4 /* Extensions.swift */,
 			);
-			path = "Swift Stars";
+			path = SwiftStars;
 			sourceTree = "<group>";
 		};
 		DBFA1E3C2316AF79009E2489 /* Swift StarsTests */ = {
@@ -166,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DBFA1E242316AF77009E2489 /* Swift Stars */ = {
+		DBFA1E242316AF77009E2489 /* SwiftStars */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBFA1E422316AF79009E2489 /* Build configuration list for PBXNativeTarget "Swift Stars" */;
+			buildConfigurationList = DBFA1E422316AF79009E2489 /* Build configuration list for PBXNativeTarget "SwiftStars" */;
 			buildPhases = (
 				DBFA1E212316AF77009E2489 /* Sources */,
 				DBFA1E222316AF77009E2489 /* Frameworks */,
@@ -179,14 +179,14 @@
 			);
 			dependencies = (
 			);
-			name = "Swift Stars";
+			name = SwiftStars;
 			productName = "Swift Stars";
-			productReference = DBFA1E252316AF77009E2489 /* Swift Stars.app */;
+			productReference = DBFA1E252316AF77009E2489 /* SwiftStars.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DBFA1E382316AF79009E2489 /* Swift StarsTests */ = {
+		DBFA1E382316AF79009E2489 /* SwiftStarsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBFA1E452316AF79009E2489 /* Build configuration list for PBXNativeTarget "Swift StarsTests" */;
+			buildConfigurationList = DBFA1E452316AF79009E2489 /* Build configuration list for PBXNativeTarget "SwiftStarsTests" */;
 			buildPhases = (
 				DBFA1E352316AF79009E2489 /* Sources */,
 				DBFA1E362316AF79009E2489 /* Frameworks */,
@@ -197,9 +197,9 @@
 			dependencies = (
 				DBFA1E3B2316AF79009E2489 /* PBXTargetDependency */,
 			);
-			name = "Swift StarsTests";
+			name = SwiftStarsTests;
 			productName = "Swift StarsTests";
-			productReference = DBFA1E392316AF79009E2489 /* Swift StarsTests.xctest */;
+			productReference = DBFA1E392316AF79009E2489 /* SwiftStarsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -221,7 +221,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DBFA1E202316AF77009E2489 /* Build configuration list for PBXProject "Swift Stars" */;
+			buildConfigurationList = DBFA1E202316AF77009E2489 /* Build configuration list for PBXProject "SwiftStars" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -234,8 +234,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBFA1E242316AF77009E2489 /* Swift Stars */,
-				DBFA1E382316AF79009E2489 /* Swift StarsTests */,
+				DBFA1E242316AF77009E2489 /* SwiftStars */,
+				DBFA1E382316AF79009E2489 /* SwiftStarsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,7 +311,7 @@
 /* Begin PBXTargetDependency section */
 		DBFA1E3B2316AF79009E2489 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DBFA1E242316AF77009E2489 /* Swift Stars */;
+			target = DBFA1E242316AF77009E2489 /* SwiftStars */;
 			targetProxy = DBFA1E3A2316AF79009E2489 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -507,7 +507,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Stars.app/Swift Stars";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftStars.app/SwiftStars";
 			};
 			name = Debug;
 		};
@@ -528,14 +528,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Stars.app/Swift Stars";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftStars.app/SwiftStars";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DBFA1E202316AF77009E2489 /* Build configuration list for PBXProject "Swift Stars" */ = {
+		DBFA1E202316AF77009E2489 /* Build configuration list for PBXProject "SwiftStars" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBFA1E402316AF79009E2489 /* Debug */,
@@ -544,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBFA1E422316AF79009E2489 /* Build configuration list for PBXNativeTarget "Swift Stars" */ = {
+		DBFA1E422316AF79009E2489 /* Build configuration list for PBXNativeTarget "SwiftStars" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBFA1E432316AF79009E2489 /* Debug */,
@@ -553,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBFA1E452316AF79009E2489 /* Build configuration list for PBXNativeTarget "Swift StarsTests" */ = {
+		DBFA1E452316AF79009E2489 /* Build configuration list for PBXNativeTarget "SwiftStarsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBFA1E462316AF79009E2489 /* Debug */,
