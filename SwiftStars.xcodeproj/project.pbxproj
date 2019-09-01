@@ -16,6 +16,10 @@
 		DBAA6710231BC8AC00A373E8 /* RepositorySpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA670B231BC54000A373E8 /* RepositorySpecs.swift */; };
 		DBAA6712231BC92000A373E8 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAA6711231BC92000A373E8 /* Nimble.framework */; };
 		DBAA6714231BC93500A373E8 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAA6713231BC93500A373E8 /* Quick.framework */; };
+		DBAA6716231BD2F200A373E8 /* ViewControllerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA6715231BD2F200A373E8 /* ViewControllerSpecs.swift */; };
+		DBAA6718231BD5B000A373E8 /* RepositoryTableViewCellSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA6717231BD5B000A373E8 /* RepositoryTableViewCellSpecs.swift */; };
+		DBAA671C231BE6E300A373E8 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAA671B231BE6E300A373E8 /* FBSnapshotTestCase.framework */; };
+		DBAA671F231BE77200A373E8 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAA671E231BE77200A373E8 /* ViewControllerTests.swift */; };
 		DBB2A33D231B06FC00A6A1F4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2A33C231B06FC00A6A1F4 /* Extensions.swift */; };
 		DBFA1E292316AF77009E2489 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E282316AF77009E2489 /* AppDelegate.swift */; };
 		DBFA1E2B2316AF77009E2489 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA1E2A2316AF77009E2489 /* ViewController.swift */; };
@@ -45,6 +49,10 @@
 		DBAA670E231BC7E900A373E8 /* Repository.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Repository.json; sourceTree = "<group>"; };
 		DBAA6711231BC92000A373E8 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		DBAA6713231BC93500A373E8 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		DBAA6715231BD2F200A373E8 /* ViewControllerSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSpecs.swift; sourceTree = "<group>"; };
+		DBAA6717231BD5B000A373E8 /* RepositoryTableViewCellSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCellSpecs.swift; sourceTree = "<group>"; };
+		DBAA671B231BE6E300A373E8 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
+		DBAA671E231BE77200A373E8 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		DBB2A33C231B06FC00A6A1F4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DBFA1E252316AF77009E2489 /* SwiftStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFA1E282316AF77009E2489 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBAA6714231BC93500A373E8 /* Quick.framework in Frameworks */,
+				DBAA671C231BE6E300A373E8 /* FBSnapshotTestCase.framework in Frameworks */,
 				DBAA6712231BC92000A373E8 /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,13 +113,23 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		DBAA670D231BC74500A373E8 /* ModelTests */ = {
+		DBAA670D231BC74500A373E8 /* NimbleTests */ = {
 			isa = PBXGroup;
 			children = (
 				DBAA670B231BC54000A373E8 /* RepositorySpecs.swift */,
 				DBAA670E231BC7E900A373E8 /* Repository.json */,
+				DBAA6715231BD2F200A373E8 /* ViewControllerSpecs.swift */,
+				DBAA6717231BD5B000A373E8 /* RepositoryTableViewCellSpecs.swift */,
 			);
-			path = ModelTests;
+			path = NimbleTests;
+			sourceTree = "<group>";
+		};
+		DBAA671D231BE72E00A373E8 /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA671E231BE77200A373E8 /* ViewControllerTests.swift */,
+			);
+			path = SnapshotTests;
 			sourceTree = "<group>";
 		};
 		DBB2A33B231B00D200A6A1F4 /* Views */ = {
@@ -168,7 +187,8 @@
 		DBFA1E3C2316AF79009E2489 /* Swift StarsTests */ = {
 			isa = PBXGroup;
 			children = (
-				DBAA670D231BC74500A373E8 /* ModelTests */,
+				DBAA671D231BE72E00A373E8 /* SnapshotTests */,
+				DBAA670D231BC74500A373E8 /* NimbleTests */,
 				DBFA1E3D2316AF79009E2489 /* Swift_StarsTests.swift */,
 				DBFA1E3F2316AF79009E2489 /* Info.plist */,
 			);
@@ -178,6 +198,7 @@
 		DBFA1E492316B305009E2489 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DBAA671B231BE6E300A373E8 /* FBSnapshotTestCase.framework */,
 				DBAA6713231BC93500A373E8 /* Quick.framework */,
 				DBAA6711231BC92000A373E8 /* Nimble.framework */,
 				DBFA1E4A2316B306009E2489 /* SnapKit.framework */,
@@ -294,6 +315,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FBSnapshotTestCase.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -302,6 +324,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SnapKit.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Nimble.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Quick.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/FBSnapshotTestCase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -329,7 +352,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBAA671F231BE77200A373E8 /* ViewControllerTests.swift in Sources */,
+				DBAA6716231BD2F200A373E8 /* ViewControllerSpecs.swift in Sources */,
 				DBAA6710231BC8AC00A373E8 /* RepositorySpecs.swift in Sources */,
+				DBAA6718231BD5B000A373E8 /* RepositoryTableViewCellSpecs.swift in Sources */,
 				DBFA1E3E2316AF79009E2489 /* Swift_StarsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

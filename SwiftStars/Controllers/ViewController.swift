@@ -54,7 +54,6 @@ class ViewController: UIViewController {
     
     @objc private func refreshRepositories() {
         
-       // self.viewModel.getRepositories()
         self.viewModel.firstPage()
         
         self.viewModel.updateHandler = {

@@ -1,38 +1,41 @@
 //
-//  RepositorySpecs.swift
-//  SwiftStars
+//  ViewControllerSpecs.swift
+//  SwiftStarsTests
 //
 //  Created by Tomate Albertini on 01/09/19.
 //  Copyright © 2019 Tomate Albertini. All rights reserved.
 //
 
-import Nimble
-import Quick
 
+import Quick
+import Nimble
 @testable import SwiftStars
 
-class RepositorySpecs: QuickSpec {
-
+class ViewControllerSpecs: QuickSpec {
     override func spec() {
         
-        var sut: RootRepositories!
+        var sut: ViewController!
+        var cell = RepositoryTableViewCell()
         
-        describe("O Model Repository"){
-            
-            context("Pode ser criado com um arquivo JSON Valido") {
+        describe("A lista de repositorios") {
+            context("Pode exibir informações do arquivo JSON") {
                 
                 afterEach {
                     sut = nil
                 }
                 
                 beforeEach {
+
+                    sut = ViewController()
                     
                     if let path = Bundle.main.path(forResource: "Repository", ofType: "json") {
                         
                         do {
                             
                             let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
-                            sut = try JSONDecoder().decode(RootRepositories.self, from: data)
+                            sut.viewModel.repositories = (try JSONDecoder().decode(RootRepositories.self, from: data)).items
+                            sut.tableView.reloadData()
+                            cell = sut.tableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! RepositoryTableViewCell
                         } catch {
                             
                             fail("Erro no Parse JSON")
@@ -40,17 +43,11 @@ class RepositorySpecs: QuickSpec {
                     }
                 }
                 
-                it("Contém 10 repositórios") {
-                    
-                    expect(sut.items.count).to(equal(10))
-                }
-                
-                it("Contém nome correto") {
-                    
-                    expect(sut.items.first!.owner.login).to(equal("Swinject"))
+                it("Numero de estrelas") {
+                    // 2
+                    expect(cell.lbRepoStarsValue.text).to(equal("3502"))
                 }
             }
-            
         }
     }
 }

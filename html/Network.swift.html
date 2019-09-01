@@ -155,27 +155,27 @@
 <tr class="covered">
 <td class="num">29</td>
 <td class="src"><pre><code class="objc">    static func doRequest(url:String, httpMethod: httpMethod, params:Dictionary&lt;String,Any&gt;?, completionHandler:  @escaping (Data?, URLResponse?, Error?) -&gt; Void) {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">30</td>
 <td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">31</td>
 <td class="src"><pre><code class="objc">        guard let url = URL(string: url) else { return }</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">32</td>
 <td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">33</td>
 <td class="src"><pre><code class="objc">        let task = self.session.dataTask(with: url) { (data, response, error) in</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="missed">
 <td class="num">34</td>
@@ -195,17 +195,17 @@
 <tr class="covered">
 <td class="num">37</td>
 <td class="src"><pre><code class="objc">        </code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">38</td>
 <td class="src"><pre><code class="objc">        task.resume()</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">39</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="never">
 <td class="num">40</td>

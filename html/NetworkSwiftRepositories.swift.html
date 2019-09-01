@@ -85,17 +85,17 @@
 <tr class="covered">
 <td class="num">15</td>
 <td class="src"><pre><code class="objc">    static func getRepositories(page: UInt = 1, itemsPerPage: UInt, completion:@escaping (Error?, [Repository]?) -&gt; Void) {</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">16</td>
 <td class="src"><pre><code class="objc">    </code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="covered">
 <td class="num">17</td>
 <td class="src"><pre><code class="objc">        Network.doRequest(url: "\(baseURL)search/repositories?q=language:swift&amp;sort=stars&amp;page=\(page)&amp;per_page=\(itemsPerPage)", httpMethod: httpMethod.get, params: nil) { (data, urlResponse, error) in</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="missed">
 <td class="num">18</td>
@@ -165,7 +165,7 @@
 <tr class="covered">
 <td class="num">31</td>
 <td class="src"><pre><code class="objc">    }</code></pre></td>
-<td class="coverage">1x</td>
+<td class="coverage">2x</td>
 </tr>
 <tr class="never">
 <td class="num">32</td>
