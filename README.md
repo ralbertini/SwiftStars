@@ -1,5 +1,5 @@
 # SwiftStars
-Aplicativo iOS que lista os repositórios com mais estrelas em ordem decrescente
+Aplicativo iOS que lista os repositórios com mais estrelas em ordem decrescente. Criado com XCode e command line tools na versão do XCode 10.3.
 
 ## Instalação
 
@@ -24,14 +24,7 @@ source /Users/`whoami`/.rvm/scripts/rvm && rvm get master && rvm install 2.5.1 &
 ```
 gem install bundler
 ```
-- [fastlane](https://github.com/fastlane/fastlane)
-```
-# Using RubyGems
-sudo gem install fastlane -NV
 
-# Alternatively using Homebrew
-brew cask install fastlane
-```
 Para instalar/atualizar as dependências:
 
 ```
