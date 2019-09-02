@@ -110,8 +110,6 @@ extension ViewController: UITableViewDelegate {
         
         if self.viewModel.repositories.count > 0 {
             
-            print(indexPath.row)
-            
             if self.viewModel.repositories.count - 2 == indexPath.row - 1 {
                 self.viewModel.nextPage()
             }

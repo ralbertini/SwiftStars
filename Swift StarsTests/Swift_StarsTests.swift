@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Swift_Stars
+@testable import SwiftStars
 
 class Swift_StarsTests: XCTestCase {
 
