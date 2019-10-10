@@ -17,6 +17,7 @@ brew install carthage
 - [RVM](https://rvm.io/rvm/install)
 ```
 curl https://raw.githubusercontent.com/rvm/rvm/master/binscripts/rvm-installer | bash -s stable
+rvm reload
 source /Users/`whoami`/.rvm/scripts/rvm && rvm get master && rvm install 2.5.1 && rvm use 2.5.1
 ```
 
