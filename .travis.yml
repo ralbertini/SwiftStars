@@ -3,7 +3,7 @@ osx_image: xcode11.7
 language: objective-c
 xcode_project: SwiftStars.xcodeproj # path to your xcodeproj folder
 xcode_scheme: SwiftStars
-xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+xcode_destination: platform:iOS Simulator, id:142BAAEC-D516-4D69-903A-A11D0B6214A7, OS:13.7, name:iPhone 11
 
 jobs:
   include:
