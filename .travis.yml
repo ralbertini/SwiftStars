@@ -10,3 +10,4 @@ jobs:
   command:
       - echo "***** Testing for Alpha *****"
       - bundle exec fastlane setup
+      - xcodebuild -project SwiftStars.xcodeproj -scheme SwiftStars -sdk iphonesimulator -destination 'id=C80A1E5D-4531-4CC9-9C87-7C07D151C29B'
