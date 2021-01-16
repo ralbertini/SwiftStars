@@ -1,0 +1,4 @@
+language: objective-c
+xcode_project: SwiftStars.xcodeproj # path to your xcodeproj folder
+xcode_scheme: SwiftStars
+xcode_destination: platform=iOS Simulator,OS=14.3,name=iPhone 11
